@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- konlpy.html -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css">
+  <title>문상웅 E-포트폴리오</title>
+</head>
+<body>
+  <header>
+    <h2 class="font Helvetica textcenter">KONLPY</h2>
+</header>
+<div class="menubar">
+  <ul id="nav">
+   <li><a href="main.html">Main</a></li>
+   <li><a href="#" id="current">Program Library</a>
+    <ul>
+       <li><a href="beautifulsoup.html">Beautiful Soup</a></li>
+       <li><a href="selenium.html">Selenium</a></li>
+       <li><a href="konlpy.html">KoNLPy</a></li>
+      </ul>
+   </li>
+   <li><a href="cluster.html" id="current">Clustering</a>
+  </ul>
+  </div>
+  <section class="displayArea">
+      <p>Beautifulsoup와 Selenium을 통해 수집한 데이터를 수치화 하기 위해 명사 추출을 시행합니다.<br/></p>
+      <p>데이터 명사화를 위해 KoNLPy중 Okt를 사용하였습니다.<br/></p>
+    <hr/><br/>
+    <img src="images/okt.bmp" width="60%", height="60%">
+    <li>Mecab: [[‘사랑/NNG’, ‘하/XSV’, ‘고/EC’, ‘싶/VX’, ‘게/EC’, ‘하/VV’, ‘는/ETM’, ‘가슴속/NNG’, ‘온/VV+ETM’, ‘감정/NNG’, ‘을/JKO’, ‘헤집/VV’, ‘어/EC’, ‘놓/VX’, ‘는/ETM’, ‘영화/NNG’, ‘예요/VCP+EF’, ‘정말/MAG’, ‘최고/NNG’]]</li>
+    <li>Komoran: [[‘사랑/NNG’, ‘하/XSV’, ‘고/EC’, ‘싶/VX’, ‘게/EC’, ‘하/VX’, ‘는/ETM’, ‘가슴속/NNG’, ‘오/VV’, ‘ㄴ/ETM’, ‘감정/NNP’, ‘을/JKO’, ‘헤집/VV’, ‘어/EC’, ‘놓/VX’, ‘는/ETM’, ‘영화/NNP’, ‘예/NNG’, ‘요정/NNP’, ‘말/NNG’, ‘최고/NNP’]]</li>
+    <li>Kkma: [[‘사랑/NNG’, ‘하/XSV’, ‘고/ECE’], [‘싶/VXA’, ‘게/ECD’], [‘하/VV’, ‘는/ETD’], [‘가슴속/NNG’], [‘오/VV’, ‘ㄴ/ETD’], [‘감정/NNG’, ‘을/JKO’], [‘헤집/VV’, ‘어/ECD’], [‘놓/VXV’, ‘는/ETD’], [‘영화/NNG’, ‘이/VCP’, ‘에요/EFN’], [‘정말/MAG’], [‘최고/NNG’]]</li>
+    <li>Okt: [‘사랑/Noun’, ‘하다/Verb’, ‘싶다/Verb’, ‘가슴속/Noun’, ‘온/Noun’, ‘감정/Noun’, ‘을/Josa’, ‘헤집다/Verb’, ‘영화/Noun’, ‘예요/Josa’, ‘정말/Noun’, ‘최고/Noun’]</li>
+    <hr/><br/>
+    <p>분석 결과를 보았을 때, 전반적인 느낌으로는 Kkma와 Komoran은 더 구체적으로 형태소에 따라 단어를 쪼개는 것으로 보입니다.<br/></p>
+    <p>한편, Okt의 경우 다른 분석기들과 미세하게 결과가 다른데요.<br/></p>
+    <p>Okt는 stem=True, norm=True의 파라미터가 존재해서, 단어들을 알아서 조금 정규화해주고, 오타도 조금 수정해주는 기능이 있습니다.<br/></p>
+    <p>위와 같이, ‘사랑하고’를 ‘사랑하다’로, ‘싶게’를 ‘싶다’로, ‘헤집어놓는’을 ‘헤집다’로 바꾸었습니다. <br/></p>
+    <hr/><br/>
+    <p>from konlpy.tag import Okt<br/></p>
+    <p>okt = Okt()<br/></p>
+    <p>okt.nouns(aa[:30])<br/></p>
+    <p>okt.nouns(ab[:30])<br/></p>
+    <p>okt.nouns(ac[:30])<br/></p>
+    <hr/><br/>
+    <a href = "https://konlpy-ko.readthedocs.io/ko/v0.4.3/"><img src="images/konlpy.png" width="60%", height="60%">
+  </section>
+</body>
+</html>
