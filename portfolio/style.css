@@ -4,13 +4,13 @@
     {border:1px solid gray; margin:5px; padding:8px; width:auto; color:white;}
     header { margin:5px; padding:10px; width:auto; }
     .textcenter{ text-align: center;}
-    .menubar ul{ background: lightblue;  height:50px; list-style:none; margin:0; padding:0;}
-    .menubar li{float:left; padding:0px; }
-    .menubar li a{ background: lightblue; color:#000000; display:block; font-weight:normal; line-height:50px; margin:0px; padding:0px 25px; text-align:center; text-decoration:none;}
-    .menubar li a:hover, .menubar ul li:hover a{ background: rgb(71,71,71); color:#000000; text-decoration:none;}
-    .menubar li ul{ background: lightblue; display:none; height:auto; padding:0px; margin:0px; border:0px; position:absolute; width:200px; z-index:200;}
+    .menubar ul{ background: white;  height:50px; list-style:none; margin:0; padding:0;}
+    .menubar li{float:center; padding:0px; }
+    .menubar li a{ background: white; color:#000000; display:block; font-weight:normal; line-height:50px; margin:0px; padding:0px 25px; text-align:center; text-decoration:none;}
+    .menubar li a:hover, .menubar ul li:hover a{ background: white; color:#000000; text-decoration:none;}
+    .menubar li ul{ background: white; display:none; height:auto; padding:0px; margin:0px; border:0px; position:absolute; width:200px; z-index:200;}
     .menubar li:hover ul{ display:block; }
-    .menubar li li { background: lightblue; display:block; float:none; margin:0px; padding:0px; width:200px; }
+    .menubar li li { background: white; display:block; float:none; margin:0px; padding:0px; width:200px; }
     .menubar li:hover li a{ background:none; }
     .menubar li ul a{ display:block; height:50px; font-size:12px; font-style:normal; margin:0px; padding:0px 10px 0px 15px; text-align:left;}
     .menubar li ul a:hover, .menubar li ul li:hover a{background: lightslategray; border:0px; color:#000000; text-decoration:none; }
