@@ -18,13 +18,3 @@
     .menubar p{ clear:left; }
     .fontsize_220{font-size: 220%;}
     label, #toggle{display:none;} 
-
-
-    @media screen and (max-width: 550px)         
-{
-#nav{display:none;}
-#toggle:checked + #nav{display:block;}
-#nav li{display:block;width:100%;text-align:center;} 
-label {display:block; text-align:center;background: lightblue;
-font-size:20px; font-weight:bold;}
-}
