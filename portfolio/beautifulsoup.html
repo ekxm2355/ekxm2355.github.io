@@ -22,11 +22,23 @@
    <li><a href="cluster.html" id="current">Clustering</a>
   </ul>
   </div>
-  <section class="textcenter">
+  <section class="displayArea">
       <p>BeautifulSoup는 HTML과 XML 문서의 parsing을 하기 위한 Python 패키지입니다.<br/></p>
       <p>이 방식은 python 내장 모듈인 requests 혹은 urllib을 이용해 HTML를 다운로드 받고, beautifulsoup로 데이터를 추출하는 방식입니다.<br/></p>
     <hr/><br/>
-    <a href = "https://www.crummy.com/software/BeautifulSoup/" img src="images/bs.jpg" width="60%", height="60%">
+    <p>from selenium import webdriver<br/></p>
+    <p>from bs4 import BeautifulSoup<br/><br/></p>
+
+    <p># setup Driver|Chrome : 크롬드라이버를 사용하는 driver 생성<br/></p>
+    <p>driver = webdriver.Chrome('/Users/..../Downloads/chromedriver')<br/></p>
+    <p>driver.implicitly_wait(3)<br/></p>
+    <p>driver.get('https://www.google.com/webhp') # 구글 검색 URL로 이동<br/></p>
+    <p>driver.find_element_by_name('??').send_keys('주제') # 값 입력<br/></p>
+    <p>driver.find_element_by_xpath().click() # 버튼클릭하기<br/></p>
+    <p>html = driver.page_source # 페이지의 elements모두 가져오기<br/></p>
+    <p>soup = BeautifulSoup(html, 'html.parser') # BeautifulSoup 사용하기<br/></p>
+    <hr/><br/>
+    <a href = "https://www.crummy.com/software/BeautifulSoup/"><img src="images/bs.jpg" width="60%", height="60%">
   </section>
 </body>
 </html>
