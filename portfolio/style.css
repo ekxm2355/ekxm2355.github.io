@@ -1,11 +1,9 @@
 @charset "utf-8";
-    body{background-color: #1c1c1c; color:white;}  
+    body{background-color: black; color:white;}  
     nav, section, article, aside, footer
     {border:1px solid gray; margin:5px; padding:8px; width:auto; color:white;}
-    header { margin:5px; padding:8px; width:auto; }
-    .fontHelvetica{ font-family: Helvetica;}
+    header { margin:5px; padding:10px; width:auto; }
     .textcenter{ text-align: center;}
-    .menubar{border:none;  border:0px; margin:0px; padding:0px; font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; font-size:14px; font-weight:bold;height:"auto"}
     .menubar ul{ background: lightblue;  height:50px; list-style:none; margin:0; padding:0;}
     .menubar li{float:left; padding:0px; }
     .menubar li a{ background: lightblue; color:#000000; display:block; font-weight:normal; line-height:50px; margin:0px; padding:0px 25px; text-align:center; text-decoration:none;}
