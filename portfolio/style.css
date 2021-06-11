@@ -1,10 +1,10 @@
 @charset "utf-8";
     body{background-color: #000000; color:white;}  
     nav, section, article, aside, footer
-    {border:1px solid gray; margin:5px; padding:8px; width:auto; color:white;}
+    {border:1px solid gray; margin:5px; padding:10px; width:auto; color:white;}
     header { margin:5px; padding:10px; width:auto; }
-    .textcenter{ text-align: center;}
-    .menubar{border:none;  border:0px; margin:0px; padding:0px; font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; font-size:14px; font-weight:bold;height:"auto"}
+    .textcenter{ text-align: left;}
+    .menubar{border:none;  border:0px; margin:0px; padding:0px; font: 67.5% font-size:15px; font-weight:bold;height:"auto"}
     .menubar ul{ background: white;  height:50px; list-style:none; margin:0; padding:0;}
     .menubar li{float:center; padding:0px; }
     .menubar li a{ background: white; color:#000000; display:block; font-weight:normal; line-height:50px; margin:0px; padding:0px 25px; text-align:center; text-decoration:none;}
@@ -16,5 +16,3 @@
     .menubar li ul a{ display:block; height:50px; font-size:12px; font-style:normal; margin:0px; padding:0px 10px 0px 15px; text-align:left;}
     .menubar li ul a:hover, .menubar li ul li:hover a{background: gray; border:0px; color:#000000; text-decoration:none; }
     .menubar p{ clear:left; }
-    .fontsize_220{font-size: 220%;}
-    label, #toggle{display:none;} 
